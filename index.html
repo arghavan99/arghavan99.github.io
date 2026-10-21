@@ -23,6 +23,31 @@
 
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="assets/css/shine.css">
+	<style>
+		@media (max-width: 575.98px) {
+			.resume-projects-section .item {
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.resume-projects-section .item > img {
+				width: min(100%, 180px) !important;
+				margin-bottom: 1rem;
+				margin-left: auto;
+				margin-right: auto !important;
+			}
+
+			.resume-projects-section .item > div {
+				flex: 1 1 100%;
+				min-width: 0;
+			}
+
+			.resume-projects-section .item-heading a {
+				display: block;
+				overflow-wrap: anywhere;
+			}
+		}
+	</style>
 
 </head> 
 
@@ -273,13 +298,29 @@
 								<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-file-earmark-text me-2 me-2"></i>Selected Publications</h3>
 
 								<div class="item d-flex align-items-start mb-3">
+									<img src="assets/images/acord.png" alt="Publication Image" class="me-3" style="width: 240px; height: auto;">
+									<div>
+										<h4 class="item-heading"><a href="https://arxiv.org/html/2610.25638v1">
+											ACorD: Adaptive Correspondence Discovery for Medical Image Registration
+										</a></h4>
+										<div class="item-publication mt-2">
+											<u>Arghavan Rezvani</u>, Kun Han, Xiaohui Xie
+										</div>
+										<div class="item-desc mt-2">
+											<em>Accepted to WACV 2027</em>
+										</div>
+									</div>
+								</div>
+								<br>
+
+								<div class="item d-flex align-items-start mb-3">
 									<img src="assets/images/equi_reg.png" alt="Publication Image" class="me-3" style="width: 240px; height: auto;">
 									<div>
 										<h4 class="item-heading"><a href="https://ieeexplore.ieee.org/abstract/document/11515644">
 											Rotation Equivariant Convolutions in Deformable Registration of Brain MRI
 										</a></h4>
 										<div class="item-publication mt-2">
-										</strong> <u>Arghavan Rezvani</u>, K. Han, A. T. Wu, P. Khosravi, X. Xie
+										</strong> <u>Arghavan Rezvani</u>, Kun Han, Anthony T. Wu, Pooya Khosravi, Xiaohui Xie
 										</div>
 										<div class="item-desc mt-2">
 											<em>2026 IEEE 23rd International Symposium on Biomedical Imaging (ISBI)</em>, 2026
